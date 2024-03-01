@@ -36,3 +36,8 @@ spec:
     targetPort: 5000
   selector:
     app: flaskdemo
+  # Optional: Specify subnets if they are not in the same AZ as your EKS cluster
+  # Replace with the actual subnet ids in your desired AZs
+  subnets:
+    - subnet-0739b0384785781cc  # Example subnet ID
+    - subnet-01b3659c181e7a89b  # Example subnet ID
